@@ -1,0 +1,20 @@
+### Cypress Custom .gitignore ###
+node_modules
+*.log
+*.aes
+.history
+.vscode
+
+# dotenv environment variables file
+*.env
+*.env.json
+
+### OSX ###
+# General
+.DS_Store
+
+# Artifacts
+results
+videos
+mochawesome-report
+mochawesome.json

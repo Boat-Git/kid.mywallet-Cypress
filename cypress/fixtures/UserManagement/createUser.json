@@ -1,0 +1,69 @@
+{
+    "tc_create_user": [
+        {
+            "testCaseNo": "TC_CREATE_01",
+            "testCaseName": "Create a new user successfully, In case of inputting all fields",
+            "userName": "Test_Cypress_001",
+            "password": "123456",
+            "fullName": "Mr.Cypress",
+            "roleUser": "Admin",
+            "mobile": "081-123-4567",
+            "email": "Cypress_Test01@Cy.com",
+            "statusUser": "0",
+            "expectedMessage": "Data has been saved successfully",
+            "caseType": "positive"
+        },
+        {
+            "testCaseNo": "TC_CREATE_02",
+            "testCaseName": "Create a new user successfully, In case of inputting only mandatory fields",
+            "userName": "Test_Cypress_002",
+            "password": "123456",
+            "fullName": "Ms.Cypress",
+            "roleUser": "เจ้าหน้าทั่วไป",
+            "mobile": "",
+            "email": "",
+            "statusUser": "",
+            "expectedMessage": "Data has been saved successfully",
+            "caseType": "positive"
+        },
+        {
+            "testCaseNo": "TC_CREATE_03",
+            "testCaseName": "Create a new user unsuccessfully, In case of inputting an existing username",
+            "userName": "Test_Cypress_000",
+            "password": "123456",
+            "fullName": "Cypress",
+            "roleUser": "uat ผู้ดูแลเว็บไซต์",
+            "mobile": "",
+            "email": "",
+            "statusUser": "0",
+            "expectedMessage": "Username is already exists.",
+            "caseType": "negative"
+        },
+        {
+            "testCaseNo": "TC_CREATE_04",
+            "testCaseName": "Create a new user unsuccessfully, In case of inputting password that does not meet criteria",
+            "userName": "Test_Cypress_003",
+            "password": "1234",
+            "fullName": "Mr.UAT",
+            "roleUser": "ดูอย่างเดียว",
+            "mobile": "02-345-6789",
+            "email": "Cypress_Test02@Cy.com",
+            "statusUser": "1",
+            "expectedMessage": "Password must be at least 6 characters.",
+            "caseType": "negative"
+        },
+        {
+            "testCaseNo": "TC_CREATE_05",
+            "testCaseName": "Create a new user unsuccessfully, In case of inputting only optional fields",
+            "userName": "",
+            "password": "",
+            "fullName": "",
+            "roleUser": "",
+            "mobile": "034-625-097",
+            "email": "Cypress_Test03@Cy.com",
+            "statusUser": "1",
+            "expectedMessage": "",
+            "caseType": "negative"
+        }
+    ]
+}

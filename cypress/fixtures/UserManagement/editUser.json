@@ -1,0 +1,52 @@
+{
+    "tc_edit_user": [
+        {
+            "testCaseNo": "TC_EDIT_01",
+            "testCaseName": "Update user information successfully, In case of editing all fields",
+            "userName": "Edit_Cypress_001",
+            "fullName": "Mr.Cypress_Edited",
+            "roleUser": "Super Admin",
+            "mobile": "088-888-8888",
+            "email": "Cypress_Test_Edited_01@Cy.com",
+            "statusUser": "1",
+            "expectedMessage": "Data has been saved successfully",
+            "caseType": "positive"
+        },
+        {
+            "testCaseNo": "TC_EDIT_02",
+            "testCaseName": "Update user information successfully, In case of inputting only mandatory fields",
+            "userName": "Edit_Cypress_002",
+            "fullName": "Ms.Cypress_Edited",
+            "roleUser": "ดูอย่างเดียว",
+            "mobile": "",
+            "email": "",
+            "statusUser": "",
+            "expectedMessage": "Data has been saved successfully",
+            "caseType": "positive"
+        },
+        {
+            "testCaseNo": "TC_EDIT_03",
+            "testCaseName": "Update user information unsuccessfully, In case of editing to an existing username",
+            "userName": "Test_Cypress_000",
+            "fullName": "Cypress",
+            "roleUser": "uat ผู้ดูแลเว็บไซต์",
+            "mobile": "",
+            "email": "",
+            "statusUser": "0",
+            "expectedMessage": "Username is already exists.",
+            "caseType": "negative"
+        },
+        {
+            "testCaseNo": "TC_EDIT_04",
+            "testCaseName": "Update user information unsuccessfully, In case of leaving all mandatory fields",
+            "userName": "",
+            "fullName": "",
+            "roleUser": "Please Select Role Permission",
+            "mobile": "02-456-7890",
+            "email": "Cypress_Test_Edited_02@Cy.com",
+            "statusUser": "1",
+            "expectedMessage": "",
+            "caseType": "negative"
+        }
+    ]
+}

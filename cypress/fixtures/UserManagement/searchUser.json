@@ -1,0 +1,70 @@
+{
+    "tc_search_user": [
+        {
+            "testCaseNo": "TC_SEARCH_01",
+            "testCaseName": "Search User Member by using 'User Name', User can be found correctly",
+            "userName": "Test_RF000",
+            "fullName": "",
+            "roleUser": "",
+            "statusUser": "",
+            "updatedDateFrom": "",
+            "updatedDateTo": "",
+            "caseType": "positive"
+        },
+        {
+            "testCaseNo": "TC_SEARCH_02",
+            "testCaseName": "Search User Member by using 'User Role', User can be found correctly",
+            "userName": "",
+            "fullName": "",
+            "roleUser": "ดูอย่างเดียว",
+            "statusUser": "",
+            "updatedDateFrom": "",
+            "updatedDateTo": "",
+            "caseType": "positive"
+        },
+        {
+            "testCaseNo": "TC_SEARCH_03",
+            "testCaseName": "Search User Member by using 'User Status Account', User can be found correctly",
+            "userName": "",
+            "fullName": "",
+            "roleUser": "",
+            "statusUser": "Inactive",
+            "updatedDateFrom": "",
+            "updatedDateTo": "",
+            "caseType": "positive"
+        },
+        {
+            "testCaseNo": "TC_SEARCH_04",
+            "testCaseName": "Search User Member by using 'From Date', User can be found correctly",
+            "userName": "",
+            "fullName": "",
+            "roleUser": "",
+            "statusUser": "",
+            "updatedDateFrom": "1993-06-28",
+            "updatedDateTo": "",
+            "caseType": "positive"
+        },
+        {
+            "testCaseNo": "TC_SEARCH_05",
+            "testCaseName": "Search User Member by using 'From Date & To Date', User can be found correctly",
+            "userName": "",
+            "fullName": "",
+            "roleUser": "",
+            "statusUser": "",
+            "updatedDateFrom": "1993-06-28",
+            "updatedDateTo": "2023-06-20",
+            "caseType": "positive"
+        },
+        {
+            "testCaseNo": "TC_SEARCH_06",
+            "testCaseName": "Search User Member by using 'All filters' but NOT relavant info, No record found",
+            "userName": "Test_RF000",
+            "fullName": "test0002",
+            "roleUser": "Uat พนักงาน",
+            "statusUser": "Active",
+            "updatedDateFrom": "1993-06-28",
+            "updatedDateTo": "2023-06-20",
+            "caseType": "negative"
+        }
+    ]
+}
